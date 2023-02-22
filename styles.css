@@ -6,7 +6,12 @@ body {
     width: 380px;
     height: 100vh;
     background: linear-gradient(135deg, hsl(237, 78%, 37%), rgb(92, 28, 210));
+    background-attachment: fixed;
     color: #ffffff;
+}
+
+select, textarea, input, button {
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 p, input, select, textarea {
