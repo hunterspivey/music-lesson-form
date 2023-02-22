@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Music Lessons</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <h1 id="title">Interested in music lessons?</h1>
+            <p id="description">Getting started is easy</p>
+            <form id="survey-form" method="post" action="">
+                <fieldset id="instrument">
+                    <p>What do you play?</p>
+                    <input id="drums" name="instrument" type="radio" value="drums"><label for="drums">Drums</label>
+                    <input id="bass" name="instrument" type="radio" value="bass"><label for="bass">Bass</label>
+                    <input id="guitar" name="instrument" type="radio" value="guitar"><label for="guitar">Guitar</label>
+                    <input id="keyboard" name="instrument" type="radio" value="keyboard"><label for="keyboard">Keyboard Instruments</label>
+                    <input id="horns" name="instrument" type="radio" value="horns"><label for="horns">Horns</label>
+                    <input id="strings" name="instrument" type="radio" value="strings"><label for="strings">Strings</label>
+                    <input id="voice" name="instrument" type="radio" value="voice"><label for="voice">Voice</label>
+                </fieldset>
+                <fieldset id="genres">
+                    <p>What kinds of music do you like?</p>
+                    <input type="checkbox" value="classical"><label for="classical">Classical</label>
+                    <input type="checkbox" value="jazz"><label for="jazz">Jazz</label>
+                    <input type="checkbox" value="pop"><label for="pop">Pop</label>
+                    <input type="checkbox" value="country"><label for="country">Country</label>
+                    <input type="checkbox" value="rock"><label for="rock">Rock</label>
+                    <input type="checkbox" value="rb"><label for="rb">R&B</label>
+                </fieldset>
+                <fieldset id="experience">
+                    <p>How much experience do you have?</p>
+                    <select id="dropdown">
+                        <option value="">(choose...)</option>
+                        <option value="none">None (we all start here!)</option>
+                        <option value="beginner">Beginner (you've learned some basics)</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="pro">Collegiate/Professional</option>
+                    </select>
+                </fieldset>
+                <fieldset id="goals">
+                    <p>What do you want to get out of music lessons?</p>
+                    <textarea rows="5" cols="40" placeholder="Write your goals here"></textarea>
+                </fieldset>
+                <fieldset id="info">
+                    <label id="name-label" for="name">Name </label><input id="name" type="text" placeholder="First and last name" required/>
+                    <label id="number-label" for="number">Age </label><input id="number" type="number" min="5" max="99" placeholder="5+" required/>
+                    <p></p>
+                    <label id="email-label" for="email">Email </label><input id="email" type="email" placeholder="Don't worry, no marketing emails from us!" required/>
+                </fieldset>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
